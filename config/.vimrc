@@ -27,7 +27,7 @@ endif
   \  'syntax-checking'
   \]
 
-  let g:dotspacevim_additional_plugins = ['morhetz/gruvbox', 'ekalinin/Dockerfile.vim', 'vim-airline/vim-airline', 'vim-airline/vim-airline-themes']
+  let g:dotspacevim_additional_plugins = ['morhetz/gruvbox', 'ekalinin/Dockerfile.vim', 'vim-airline/vim-airline', 'vim-airline/vim-airline-themes', 'kien/ctrlp.vim']
   " You can also pass vim plug options like this: [{ 'name': 'Valloric/YouCompleteMe', 'option': {'do': './install.py'}}]
 
   let g:dotspacevim_excluded_plugins = []
@@ -63,6 +63,7 @@ call spacevim#bootstrap()
   colorscheme gruvbox
   let g:airline#extensions#tabline#enabled = 1 
   let g:airline_powerline_fonts = 1
+  let g:airline#extensions#tabline#fnamemod = ':t'
   set laststatus=2
   set number
 " }}}

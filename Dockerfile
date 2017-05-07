@@ -5,6 +5,9 @@ ENV EDITOR vim
 RUN apt-get install -y zsh
 RUN apt-get install -y git-core
 RUN apt-get install -y bc
+RUN apt-get install -y libncursesw5-dev
+RUN apt-get install -y libncurses-dev
+RUN apt-get install -y libgpm-dev
 RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 RUN chsh -s `which zsh` root
 RUN mkdir /home/gogo
