@@ -1,0 +1,7 @@
+dev:
+  build: /home/gogo/Development/Docker/docker_dev_extra/
+  command: zsh
+  volumes:
+    - .:/home/gogo/Development
+    - /$HOME/.ssh:/root/.ssh
+    - /$HOME/Development/.gems:/root/.rbenv/versions/

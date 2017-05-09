@@ -27,7 +27,7 @@ endif
   \  'syntax-checking'
   \]
 
-  let g:dotspacevim_additional_plugins = ['morhetz/gruvbox', 'ekalinin/Dockerfile.vim', 'vim-airline/vim-airline', 'vim-airline/vim-airline-themes', 'kien/ctrlp.vim']
+  let g:dotspacevim_additional_plugins = ['morhetz/gruvbox', 'ekalinin/Dockerfile.vim', 'vim-airline/vim-airline', 'vim-airline/vim-airline-themes', 'kien/ctrlp.vim', 'fatih/vim-go']
   " You can also pass vim plug options like this: [{ 'name': 'Valloric/YouCompleteMe', 'option': {'do': './install.py'}}]
 
   let g:dotspacevim_excluded_plugins = []
