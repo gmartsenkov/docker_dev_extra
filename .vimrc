@@ -69,5 +69,4 @@ call spacevim#bootstrap()
   set expandtab
   set laststatus=2
   set number
-  set noswapfile
 " }}}

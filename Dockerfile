@@ -8,8 +8,15 @@ RUN apt-get install -y bc
 RUN apt-get install -y libncursesw5-dev
 RUN apt-get install -y libncurses-dev
 RUN apt-get install -y libgpm-dev
+RUN apt-get install -y software-properties-common python-software-properties
+
+# Install zsh
 RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 RUN chsh -s `which zsh` root
+# Install Golang
+RUN apt-get install -y golang-go
+ENV GOPATH /home/gogo/Development/.go
+
 RUN mkdir /home/gogo
 RUN touch /home/gogo/.viminfo
 WORKDIR /home/gogo
